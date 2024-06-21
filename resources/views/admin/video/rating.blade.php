@@ -102,6 +102,7 @@ input:checked + .slider:before {
     <div class="row justify-content-center">
         <div class="col-md-12 mt-4">
             <div class="card p-4 rounded cShadow table-responsive">
+           
                 <table class="table table-bordered  table-hover dt-responsive display nowrap">
                     <thead>
                         <tr>
@@ -161,7 +162,8 @@ input:checked + .slider:before {
                     {{ $ratings->links() }}
                 @endif
             </div>
-            <a href="/download-csv" class="btn btn-primary">Download Rating</a>
+            <a href="{{ route('download.rating', $video->id) }}" class="btn btn-primary mb-3">Download Video Ratings</a>
+            <!-- <a href="/download-csv" class="btn btn-primary">Download Rating</a> -->
         </div>
     </div>
 </div>

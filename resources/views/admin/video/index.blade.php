@@ -140,7 +140,7 @@ input:checked + .slider:before {
                             <th>Category</th>
                             <th>Added By</th>
                             <th>Status</th>
-                            <th>Action &emsp;  <a href="/download-csv" class="btn btn-primary">Download Rating</a></th>
+                            <th>Action &emsp;  <a href="/download-csv" class="btn btn-primary">Download All Videos Rating</a></th>
                         </tr>
                     </thead>
                     <tbody>

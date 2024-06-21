@@ -8,6 +8,9 @@ use App\Http\Controllers\VideoController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\UserController;
 
+use App\Http\Controllers\RatingController;
+
+
 
 Route::get('/',   [HomeController::class, 'index'])->name('home');
 Route::get('/filter-videos', [HomeController::class, 'filterVideos']);
