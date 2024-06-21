@@ -14,7 +14,7 @@ class DataExportController extends Controller
         $data = Feedback::all();
         $filename = "rating.csv";
         $handle = fopen($filename, 'w');
-        fputcsv($handle, array('video_id', 'Video Title', 'Video Resolution','Visual Quality Experience', 'Streaming Quality', 'User Interface (UI) and Navigation', 'rating', 'Users Opinion')); // add your column headers here
+        fputcsv($handle, array('video_id', 'Video Title', 'Additional Information','Visual Quality Experience', 'Streaming Quality', 'User Interface (UI) and Navigation', 'Overall Rating', 'Users Opinion')); // add your column headers here
 
         foreach ($data as $row) {
             $video = Video::find($row->video_id); // Retrieve the video record

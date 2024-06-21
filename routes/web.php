@@ -21,6 +21,7 @@ Route::get('/upload-video',   [HomeController::class, 'uploadVideo'])->name('upl
 Route::post('/upload-video',   [HomeController::class, 'uploadVideoSubmit'])->name('upload.video');
 Route::post('/profile/update', [HomeController::class, 'editProfile'])->name('editProfile');
 Route::get('/download-csv', [App\Http\Controllers\DataExportController::class, 'exportCsv']);
+Route::get('/rating/download/{video}', [RatingController::class, 'download'])->name('download.rating');
 
 Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('admin', [AdminController::class, 'dashboard'])->name('dashboard');

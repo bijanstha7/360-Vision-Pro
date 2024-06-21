@@ -86,9 +86,9 @@ input:checked + .slider:before {
             @csrf
             <div class="row">
                 <div class="form-group col-sm-6 col-md-6 col-xl-6 col-lg-6 mb-2">
-                    <label for="">Title<span class="text-danger">*</span></label>
+                    <label for="">Title of Video<span class="text-danger">*</span></label>
                     <div class="input-group">
-                        <input required type="text" class="form-control" name="title" placeholder="Enter Title">
+                        <input required type="text" class="form-control" name="title" placeholder="Enter Title of Video">
                     </div>
                 </div>
                 
@@ -135,9 +135,9 @@ input:checked + .slider:before {
                     </div>
                 </div>
                 <div class="form-group col-sm-6 col-md-6 col-xl-6 col-lg-6 mb-2">
-                    <label for="">Video Resolution<span class="text-danger">*</span></label>
+                    <label for="">Additional Information<span class="text-danger">*</span></label>
                     <div class="input-group">
-                        <input required type="text" class="form-control" name="resolution" placeholder="Enter Video REsolution">
+                        <input required type="text" class="form-control" name="resolution" placeholder="Enter Video Resolution or Frame rates">
                     </div>
                 </div>
                 <div class="form-group col-12 mb-2">

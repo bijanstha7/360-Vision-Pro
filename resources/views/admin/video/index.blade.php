@@ -127,18 +127,20 @@ input:checked + .slider:before {
 </div>
 <div class="w-100">
     <div class="row justify-content-center">
+    
         <div class="col-md-12 mt-4">
             <div class="card p-4 rounded cShadow table-responsive">
+            
                 <table id="datatable" class="table table-bordered  table-hover dt-responsive display nowrap">
                     <thead>
                         <tr>
-                            <th>Title</th>
+                            <th>Title of Video</th>
                             <th>Thumbnail</th>
-                            <th>Resolution</th>
+                            <th>Additional Information</th>
                             <th>Category</th>
                             <th>Added By</th>
                             <th>Status</th>
-                            <th>Action</th>
+                            <th>Action &emsp;  <a href="/download-csv" class="btn btn-primary">Download Rating</a></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -154,6 +156,7 @@ input:checked + .slider:before {
 <div class="modal fade" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="detailModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
+            
             <div class="modal-header">
                 <h5 class="modal-title" id="detailModalLabel">Video Details</h5>
                 <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>

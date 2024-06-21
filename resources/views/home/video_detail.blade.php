@@ -92,13 +92,13 @@
             <video id="player_orig" class="player video-js vjs-default-skin vjs-big-play-centered" crossorigin="anonymous" preload="metadata" style="width:660px;height:500px" autoplay controls>
                 <source poster="https://raw.githubusercontent.com/Pierrinho/elephant/master/elephant.jpg" src="/{{ htmlentities($video->video) }}">
             </video>
-            <h4 style="text-align:center;">Original Video</h4>
+            <!-- <h4 style="text-align:center;">Original Video</h4> -->
         </div>  
         <div class="col-lg-6 col-md-12 col-sm-6">
             <video id="player" class="player video-js vjs-default-skin vjs-big-play-centered" crossorigin="anonymous" preload="metadata" style="width:660px;height:500px" autoplay controls>
                 <source poster="https://raw.githubusercontent.com/Pierrinho/elephant/master/elephant.jpg" src="/{{ htmlentities($video->enhanced_video) }}">
             </video>
-            <h4 style="text-align:center;">Enhanced Video</h4>
+            <!-- <h4 style="text-align:center;">Enhanced Video</h4> -->
         </div>
         @else
             <div class="col-lg-6 col-md-12 col-sm-6">
@@ -191,7 +191,7 @@
             </div>
 
             <div class="mt-5">
-                <h2>Users Opinion</h2>
+                <h2>Viewers Opinion</h2>
                 <div id="reviews-container"></div>
             </div>
         </div>
